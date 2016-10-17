@@ -1,0 +1,92 @@
+//
+//  LBPrefixHeader.pch
+//  Cyueyue
+//
+//  Created by fami_Lbb on 16/7/25.
+//  Copyright © 2016年 fami_Lbb. All rights reserved.
+//
+
+#ifndef LBPrefixHeader_pch
+#define LBPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define cTopicBlue [UIColor colorWithRed:108/255.0 green:147/255.0 blue:226/255.0 alpha:1];
+#define cLight [UIColor colorWithRed:175/255.0 green:173/255.0 blue:173/255.0 alpha:1];
+#define cYellow [UIColor colorWithRed:245/255.0 green:197/255.0 blue:35/255.0 alpha:1];
+#define kNavigationHeight 44.0
+#define cCustom(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A];
+#define kSearchHeight 45
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define iOS7 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) ? YES : NO)
+#define iOS9 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) ? YES : NO)
+#define timeArrayO @[@"7:00",@"8:00",@"9:00",@"10:00",@"11:00",@"12:00",@"13:00",@"14:00",@"15:00",@"16:00",@"17:00",@"18:00",@"19:00",@"20:00",@"21:00",@"22:00",@"23:00",@"24:00"];
+#define timeArrayR @[@"7:00",@"7:30",@"8:00",@"8:30",@"9:00",@"9:30",@"10:00",@"10:30",@"11:00",@"11:30",@"12:00",@"12:30",@"13:00",@"13:30",@"14:00",@"14:30",@"15:00",@"15:30",@"16:00",@"16:30",@"17:00",@"17:30",@"18:00",@"18:30",@"19:00",@"19:30",@"20:00",@"20:30",@"21:00",@"21:30",@"22:00",@"22:30",@"23:00",@"23:30",@"24:00"];
+
+
+//日历
+#import "FSCalendar.h"
+
+//侧栏需要数据
+#define kMenuFullWidth 320.0f
+#define kMenuDisplayedWidth 280.0f
+#define kMenuOverlayWidth (self.view.bounds.size.width - kMenuDisplayedWidth)
+#define kMenuBounceOffset 10.0f
+#define kMenuBounceDuration .3f
+#define kMenuSlideDuration .3f
+
+#import "YRSideViewController.h"
+#import "SideViewController.h"
+
+//提示框
+#import "UIAlertView+TKCategory.h"
+#import "TKAlertCenter.h"
+
+#import "ILBarButtonItem.h"
+#import "UIImageView+WebCache.h"
+#import <AddressBook/AddressBook.h>
+
+#import "AppDelegate.h"
+#import "SideViewController.h"
+#import "FriendViewController.h"
+#import "PreferencesViewController.h"
+#import "LoginViewController.h"
+#import "MyProfile.h"
+#import "LBHelpers.h"
+#import "PersonToContactModel.h"
+#import "FriendAddViewController.h"
+#import "FriendRequestViewController.h"
+#import "UIImage+border.h"
+#import "FillLabelViewController.h"
+#import "FriendHomeVC.h"
+#import "FriendMaterialViewController.h"
+#import "SuspensionView.h"
+#import "LocationViewController.h"
+#import "MatchViewController.h"
+#import "TimeLineViewController.h"
+#import "TimeWeekViewController.h"
+#import "YueCarbonViewController.h"
+#import "YueFriendTableViewCell.h"
+#import "YueFirendViewController.h"
+
+
+//定位
+#import <CoreLocation/CoreLocation.h>
+
+//百度地图
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+
+#define baiduMapAK @"3CEWK5hRn2yUGxocOT8Xd9WTxeKl3B9c"
+
+#endif /* LBPrefixHeader_pch */
